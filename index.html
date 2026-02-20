@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voyage - Modern Travel</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917668380511" class="whatsapp-float" target="_blank">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+      alt="WhatsApp"
+    />
+  </a>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">Voyage</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="hamburger">☰</div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Discover Your Next Adventure</h1>
+        <p>Luxury tours. Premium stays. Unforgettable memories.</p>
+        <button onclick="scrollToSection('packages')">Explore Tours</button>
+      </div>
+    </section>
+
+    <section id="packages" class="packages">
+      <h2>Trending Packages</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="https://source.unsplash.com/500x400/?maldives" alt="" />
+          <div class="card-content">
+            <h3>Maldives Escape</h3>
+            <p>5 Days / 4 Nights</p>
+            <span>₹45,999</span>
+            <button onclick="bookNow()">Book Now</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/500x400/?paris" alt="" />
+          <div class="card-content">
+            <h3>Paris Getaway</h3>
+            <p>6 Days / 5 Nights</p>
+            <span>₹85,999</span>
+            <button onclick="bookNow()">Book Now</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/500x400/?ladakh" alt="" />
+          <div class="card-content">
+            <h3>Ladakh Adventure</h3>
+            <p>7 Days / 6 Nights</p>
+            <span>₹32,999</span>
+            <button onclick="bookNow()">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Why Choose Us</h2>
+      <p>
+        We craft personalized travel experiences with world-class service and
+        premium comfort.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2026 Voyage. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
