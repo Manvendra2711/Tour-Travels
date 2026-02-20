@@ -11,9 +11,4 @@ function scrollToSection(id) {
 
 function bookNow() {
     alert("Online booking coming soon!");
-}
-
-document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Message Sent Successfully!");
-});
+};
